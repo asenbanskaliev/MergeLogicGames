@@ -4,43 +4,84 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>MergeLogic Games</title>
-    <meta
-      name="description"
-      content="MergeLogic Games es un estudio independiente de desarrollo de juegos para Android, especializado en juegos puzzle."
-    />
+    <meta name="description" content="MergeLogic Games es un estudio independiente de desarrollo de juegos puzzle para Android." />
+    <meta name="theme-color" content="#0b1220" />
+    <link rel="icon" href="./icono-bg.png" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <main class="wrap">
-      <header class="hero">
-        <h1>MergeLogic Games</h1>
-        <p class="subtitle">Estudio independiente de juegos puzzle para Android</p>
+    <div class="site">
+      <header class="site-header">
+        <div class="wrap header-inner">
+          <a class="brand" href="/">
+            <img src="./icono-bg.png" alt="MergeLogic Games" class="logo" />
+            <span class="brand-text">MergeLogic Games</span>
+          </a>
+          <nav class="nav">
+            <a href="#about">Acerca</a>
+            <a href="./games.html">Ver juegos</a>
+            <a href="mailto:contact@mergelogic.example">Contacto</a>
+          </nav>
+        </div>
       </header>
 
-      <section class="card">
-        <h2>MergeLogic Games</h2>
-        <p>
-          MergeLogic Games es un estudio independiente de desarrollo de juegos para Android,
-          especializado en juegos puzzle que combinan lógica, mecánicas de combinación y una
-          experiencia de juego accesible para todos los públicos.
-        </p>
-        <p>
-          Nuestro objetivo es crear juegos sencillos de aprender, pero con la profundidad suficiente
-          para ofrecer retos constantes y una experiencia entretenida a largo plazo. Diseñamos cada
-          juego poniendo el foco en la jugabilidad, la claridad visual y el disfrute del jugador,
-          sin complicaciones innecesarias.
-        </p>
-        <p>
-          En MergeLogic Games trabajamos para ofrecer títulos de calidad, optimizados para
-          dispositivos Android, siguiendo las buenas prácticas de desarrollo y priorizando una
-          experiencia fluida, divertida y cuidada.
-        </p>
-      </section>
+      <main class="wrap">
+        <section class="hero">
+          <div class="hero-content">
+            <h1 class="title">MergeLogic Games</h1>
+            <p class="subtitle">Estudio independiente de juegos puzzle para Android</p>
+            <p class="hero-ctas">
+              <a class="btn primary" href="./games.html">Ver juegos</a>
+              <a class="btn ghost" href="mailto:asen.banskaliev@gmail.com">Contáctanos</a>
+            </p>
+          </div>
+        </section>
 
-      <footer class="footer">
-        <small>© <span id="y"></span> MergeLogic Games</small>
-      </footer>
-    </main>
+        <section id="about" class="card">
+          <h2>MergeLogic Games</h2>
+          <p>
+            MergeLogic Games es un estudio independiente de desarrollo de juegos para Android,
+            especializado en juegos puzzle que combinan lógica, mecánicas de combinación y una
+            experiencia de juego accesible para todos los públicos.
+          </p>
+          <p>
+            Nuestro objetivo es crear juegos sencillos de aprender, pero con la profundidad suficiente
+            para ofrecer retos constantes y una experiencia entretenida a largo plazo. Diseñamos cada
+            juego poniendo el foco en la jugabilidad, la claridad visual y el disfrute del jugador,
+            sin complicaciones innecesarias.
+          </p>
+          <p>
+            En MergeLogic Games trabajamos para ofrecer títulos de calidad, optimizados para
+            dispositivos Android, siguiendo las buenas prácticas de desarrollo y priorizando una
+            experiencia fluida, divertida y cuidada.
+          </p>
+        </section>
+
+        <section id="games" class="cards-grid">
+          <article class="mini-card">
+            <h3>Juego A</h3>
+            <p>Pequeña descripción del juego A que destaca su mecánica principal.</p>
+          </article>
+          <article class="mini-card">
+            <h3>Juego B</h3>
+            <p>Pequeña descripción del juego B, centrada en retos y rejugabilidad.</p>
+          </article>
+          <article class="mini-card">
+            <h3>Juego C</h3>
+            <p>Pequeña descripción del juego C, mencionando optimización para Android.</p>
+          </article>
+        </section>
+
+        <footer class="footer">
+          <div class="wrap footer-inner">
+            <small>© <span id="y"></span> MergeLogic Games — Hecho con cuidado para jugadores móviles</small>
+            <nav class="footer-nav">
+              <a href="#">Política de privacidad</a>
+            </nav>
+          </div>
+        </footer>
+      </main>
+    </div>
 
     <script>
       document.getElementById("y").textContent = new Date().getFullYear();
